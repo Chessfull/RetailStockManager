@@ -11,6 +11,23 @@
   </ItemGroup>
 
   <ItemGroup>
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="7.0.0" />
+
+
+	  <PackageReference Include="AutoMapper" Version="12.0.1" />
+	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+
+
+	  <PackageReference Include="FluentValidation" Version="11.10.0" />
+	  <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+
+	  <PackageReference Include="Microsoft.Extensions.Caching.Hybrid" Version="9.3.0" />
+
+
+	  <PackageReference Include="AspNetCore.HealthChecks.MongoDb" Version="8.0.1" />
+
+	  <PackageReference Include="Serilog.AspNetCore" Version="8.0.3" />
+	  <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
     <ProjectReference Include="..\RetailStockManager.Domain\RetailStockManager.Domain.csproj" />
     <ProjectReference Include="..\RetailStockManager.Application\RetailStockManager.Application.csproj" />
     <ProjectReference Include="..\RetailStockManager.Infrastructure\RetailStockManager.Infrastructure.csproj" />
