@@ -18,7 +18,7 @@ var kafka = builder.AddKafka("kafka")
     .WithKafkaUI(); // Kafka management UI
 
 // 🔧 Main API Service
-var apiService = builder.AddProject("api", "../src/RetailStockManager.API/RetailStockManager.API.csproj")
+var apiService = builder.AddProject("api", "../../src/RetailStockManager.API/RetailStockManager.API.csproj")
     .WithReference(mongodb) // Automatic connection string injection
     .WithReference(redis)   // Automatic Redis configuration
     .WithReference(kafka)   // Kafka configuration
