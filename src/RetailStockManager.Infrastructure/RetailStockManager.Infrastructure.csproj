@@ -1,6 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="3.4.2" />
+	  <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.3" />
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.3" />
+	  <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.3" />
+	  <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.3" />
+
+	  <PackageReference Include="Microsoft.Extensions.Caching.Hybrid" Version="9.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RetailStockManager.Domain\RetailStockManager.Domain.csproj" />
     <ProjectReference Include="..\RetailStockManager.Application\RetailStockManager.Application.csproj" />
   </ItemGroup>
