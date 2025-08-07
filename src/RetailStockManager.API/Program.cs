@@ -1,4 +1,12 @@
+using Serilog;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog((context, configuration) =>
+    configuration
+        .ReadFrom.Configuration(context.Configuration)
+        .WriteTo.Console()
+        .Enrich.FromLogContext());
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
